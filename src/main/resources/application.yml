@@ -1,0 +1,16 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    response-cache-auto-expiration-in-seconds: 180
+    eviction-interval-timer-in-ms: 30000
+    response-cache-update-interval-ms: 10000
+    enable-self-preservation: false
+server:
+  port: 1001
+spring:
+  application:
+    name: eureka-server
